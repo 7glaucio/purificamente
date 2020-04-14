@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: whitesmoke;
+}
+
+#corpoCabecalho{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+header{
+    background: #3D8CDC;
+    padding: 12px 0;
+}
+
+/* Topo do Site */
+
+#logoPrincipal{
+    max-width: 480px;
+    margin-top: 5px;
+}
+
+.menu-header{
+    margin-right: 60px;
+    margin-top: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    word-spacing: normal;
+    float: right;
+}
+
+.menu-header li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menu-header a{
+    color: white;
+    text-decoration: none;
+}
+
+#socialTopo{
+    margin-right: 125px;
+    margin-top: -4%;
+    float: right;
+    max-width: 35%;
+}
+
+/* Notícias */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rodapé do Site */
+
+footer{
+    background-color: rgb(110, 110, 110);
+    padding-top: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#logoRodape{
+    max-width: 480px;
+    margin-left: 30%;
+}
+
