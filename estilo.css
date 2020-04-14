@@ -13,8 +13,8 @@
 .clear{clear: both;}
 
 header{
-    background: #3D8CDC;
-    padding: 12px 0;
+    background: linear-gradient(90deg, #08C8F6 0%, #3085C7 100%);
+    padding: 10px 0;
 }
 
 /* Topo do Site */
@@ -26,9 +26,9 @@ header{
 
 .menu-header{
     margin-right: 60px;
-    margin-top: 1%;
+    margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 23px;
     word-spacing: normal;
     float: right;
 }
@@ -36,6 +36,11 @@ header{
 .menu-header li{
     display: inline-block;
     margin-right: 15px;
+    background-color: #FD84A5;
+    padding: 9px 13px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px #AA3354;
 }
 
 .menu-header a{
@@ -43,26 +48,46 @@ header{
     text-decoration: none;
 }
 
-#socialTopo{
-    margin-right: 125px;
-    margin-top: -4%;
-    float: right;
-    max-width: 35%;
+.menu-header a:hover{
+    color: #AA3354;
 }
+
+#socialTopo{
+    margin-right: -20px;
+    margin-top: -52px;
+    float: right;
+}
+
+#RedeSocialTopo{
+    max-width: 11%;
+    animation-name: rodaSocial;
+    animation-duration: 1s;  
+  }
+
+  @keyframes rodaSocial {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 
 /* Notícias */
 
 .grid-container {
+    margin-top: 12px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 5px;
-    background-color: #DBEEFD;
   }
   
   .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 14px;
   }
 
@@ -74,8 +99,25 @@ header{
   }
 
   h3{
-      font-size: 20px;
-      
+    font-size: 20px;
+    color: #2D7DB9;
+    text-rendering: optimizeLegibility;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: surgeTitulo;
+    animation-duration: 1s;  
+  }
+
+  @keyframes surgeTitulo {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
 .imgDestaque{
@@ -98,3 +140,46 @@ footer{
     margin-left: 30%;
 }
 
+/* Estilizando inputs com tipo Texto */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* Estilizando inputs com tipo Email */
+input[type=email], email {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* Estilizando botão de Envio */
+input[type=submit] {
+  background-color: #2D7DB9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilizando container do formulário */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 35px;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
